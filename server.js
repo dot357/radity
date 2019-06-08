@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 var server = require('http').createServer(app);
-const port = 3001;
+const port = 3000;
 
 
 
@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));  // public dosya kullan
 
 //app.get('/', (req, res) => res.send(index.html))
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Listening ${port}!`))
 
 
 // ana sayfayı sunmak için

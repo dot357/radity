@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>Radity</title>
+</head>
+
+
+<style>
+.buble1{
+position: absolute;
+left:13vh;
+top:15vh;
+z-index: -1;
+min-width: 15em;
+min-height: 15em;
+border-radius: 50%;
+display: inline-block;
+opacity: 0;
+background: rgb(255,255,255);
+background: linear-gradient(3deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+    
+}
+.buble2{
+position: absolute;
+left:7vh;
+top:13vh;
+z-index: -1;
+min-width: 17em;
+min-height: 17em;
+border-radius: 50%;
+display: inline-block;
+opacity: 0;
+background: rgb(255,255,255);
+background: linear-gradient(3deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+    
+}
+.buble3{
+position: absolute;
+left:23vh;
+top:65vh;
+z-index: -1;
+min-width: 4em;
+min-height: 4em;
+border-radius: 50%;
+display: inline-block;
+opacity: 0;
+background: rgb(255,255,255);
+background: linear-gradient(3deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+    
+}
+.buble4{
+position: absolute;
+left:33vh;
+top:68vh;
+z-index: -1;
+min-width: 23em;
+min-height: 23em;
+border-radius: 50%;
+display: inline-block;
+opacity: 0;
+background: rgb(255,255,255);
+background: linear-gradient(3deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+    
+}
+
+
+.colorfull{
+ 
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
+</style>
+
+<body style="background: #081056">
+<div id="bubles">
+        
+        <div  id="buble1" class="buble1"></div>
+        <div  id="buble2" class="buble2"></div>
+        <div  id="buble3" class="buble3"></div>
+        <div  id="buble4" class="buble4"></div>
+     
+
+        
+</div>
+
+    <!-- Nav bar start-->
+    <nav class="flex items-center justify-between flex-wrap bg-transparent p-6">
+        
+        <!--Logo-->
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+
+          <span class="font-semibold text-xl tracking-tight">
+            <img style="width: 4vh;" class="float-left"  src="radity-logo.svg" alt="">
+            <span class="float-left pl-2 text-lg">Radity</span> <br>
+            <span class=" font-light text-sm float-right">Digital Solutions</span>
+             
+
+          </span>
+        </div>
+
+        <!-- Logo end-->
+
+
+
+        
+      
+          <div class="">
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Nav bar end -->
+
+
+
+
+<!--Hero start-->
+    <div id="hero"  class="w-full  items-center">
+        <p style="font-size:2.7em;" class="w-full  text-white p-10  mx-auto text-xl font-bold">Software is still eating the world.<span class="colorfull"  style="cursor: pointer;">*
+                  </span>
+         </p>   
+            
+         <p style="letter-spacing: 0.1em" class="w-full  text-white pr-10 pl-10 mx-auto text-lg font-light ">
+
+                We help you stay alive and ahead.
+
+
+         </p>
+        
+
+    </div>
+    <div   class="w-full  text-white p-3 pr-10 pl-10 mx-auto text-lg font-light ">
+
+     <button class="bg-blue-600 pl-4 pr-4  p-2 rounded border border-blue-600 hover:text-blue-600 hover:bg-transparent  hover:border-blue-600"> Our Services 
+
+      <img style="width: 1em;float:right;padding-top:5px;margin-left:13px;" src="right-arrow.svg" alt="">
+     </button>
+    </div>
+   
+    <div class="w-full items-center">
+        <div class="pr-10 pl-10 p-5 flex">
+                <img style="width: 9vh;height: 9vh;" src="https://raditycmswebsite-live-5f5ab2ec57ec4907b-b52c0bb.divio-media.net/filer_public/30/f8/30f88205-2730-4943-8bbc-d44cc5541242/clutch3x.png" alt="">
+                <span class="float-left pl-4 text-white font-bold">
+
+
+Congratulations to Radity for their industry leadership!
+
+                </span>
+               
+
+        </div>
+        <span style="padding-left:8em" class="  text-white font-light">
+                    
+
+                — Clutch.co
+                
+        </span>
+        
+    </div>
+
+<!--Hero End-->
+
+
+
+
+
+</body>
+</html>
+
+
+<script>
+var bodyWidth = 400;
+var bodyHeight = document.body.clientHeight;
+
+var randPosX = Math.floor((Math.random()*bodyWidth)); 
+var randPosY = Math.floor((Math.random()*bodyHeight));
+var posLog = document.getElementById('pos_log');
+var posXY = 'x: ' + randPosX + '<br />' + 'y: ' + randPosY;
+$('.buble2').animate({
+    opacity: 0.1,
+    left: randPosX,
+    top: randPosY
+  }, 2500, function() {
+    // buble2
+  });
+  
+
+var randPosX = Math.floor((Math.random()*bodyWidth)); 
+var randPosY = Math.floor((Math.random()*bodyHeight));
+var posLog = document.getElementById('pos_log');
+var posXY = 'x: ' + randPosX + '<br />' + 'y: ' + randPosY;
+$('.buble1').animate({
+    opacity: 0.2,
+    left: randPosX,
+    top: randPosY
+  }, 4500, function() {
+    // buble1
+  });
+    
+var randPosX = Math.floor((Math.random()*bodyWidth)); 
+var randPosY = Math.floor((Math.random()*bodyHeight));
+var posLog = document.getElementById('pos_log');
+var posXY = 'x: ' + randPosX + '<br />' + 'y: ' + randPosY;
+$('.buble1').animate({
+    opacity: 0.2,
+    left: randPosX,
+    top: randPosY
+  }, 4500, function() {
+    // buble1
+  });
+
+
+var randPosX = Math.floor((Math.random()*bodyWidth)); 
+var randPosY = Math.floor((Math.random()*bodyHeight));
+var posLog = document.getElementById('pos_log');
+var posXY = 'x: ' + randPosX + '<br />' + 'y: ' + randPosY;
+$('.buble3').animate({
+    opacity: 0.1,
+    left: randPosX,
+    top: randPosY
+  }, 4500, function() {
+    // buble3
+  });
+
+var randPosX = Math.floor((Math.random()*bodyWidth)); 
+var randPosY = Math.floor((Math.random()*bodyHeight));
+var posLog = document.getElementById('pos_log');
+var posXY = 'x: ' + randPosX + '<br />' + 'y: ' + randPosY;
+$('.buble4').animate({
+    opacity: 0.1,
+    left: randPosX,
+    top: randPosY
+  }, 1500, function() {
+    // buble4
+  });
+
+
+
+  
+
+</script>
